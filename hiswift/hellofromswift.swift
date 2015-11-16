@@ -12,7 +12,7 @@ class helloer: NSObject {
     var name: String!
     var con: ViewController! {
         didSet {
-            print("set")
+            print("set\n")
         }
     }
     
