@@ -8,6 +8,7 @@
 
 import Foundation
 
+//todo
 class helloer: NSObject {
     var name: String!
     var con: ViewController! {
