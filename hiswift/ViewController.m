@@ -23,6 +23,10 @@
     hello.con = self;
     NSString *s = [hello say];
     NSLog(@"objc: i got \"%@\" ",s);
+    [hello handleSomething:@"hi" complete:^(NSString*result){
+        NSLog(result);
+        return result;
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
