@@ -24,7 +24,7 @@
     NSString *s = [hello say];
     NSLog(@"objc: i got \"%@\" ",s);
     [hello handleSomething:@"hi" complete:^(NSString*result){
-        NSLog(result);
+        NSLog(@"%@",result);
         return result;
     }];
 }

@@ -116,6 +116,7 @@
 					CD9D49B81BFA10DE00D1099F = {
 						CreatedOnToolsVersion = 7.1.1;
 						DevelopmentTeam = SFUNVC6L9S;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -279,6 +280,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "hiswift/hiswift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -294,6 +296,7 @@
 				PRODUCT_MODULE_NAME = hiswift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "hiswift/hiswift-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -316,6 +319,7 @@
 				CD9D49D21BFA10DE00D1099F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

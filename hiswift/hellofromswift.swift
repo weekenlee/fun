@@ -8,7 +8,6 @@
 
 import Foundation
 
-//todo
 class helloer: NSObject {
     var name: String!
     var con: ViewController! {
@@ -18,14 +17,14 @@ class helloer: NSObject {
     }
     
     func say()->String {
-//        self.handleSomething("one", complete: self.hadleSomethingComplete)
-//        
-//        self.handleSomething("second") {
-//            (result:String)	 in
-//            print(result)
-//            return result
-//        }
-//        
+        self.handleSomething("one", complete: self.hadleSomethingComplete)
+        
+        self.handleSomething("second") {
+            (result:String)	 in
+            print(result)
+            return result
+        }
+        
         name = "hi"
         if let  s = con.sayfromobjc() {
             print("swift: i have got \"\(s)\"  \n")
@@ -34,12 +33,12 @@ class helloer: NSObject {
         
     }
     
-    func handleSomething(input:String, complete:(result:String)	->String) {
+    func handleSomething(_ input:String, complete:(_ result:String)	->String) {
         print("do something \(input)")
-        print(complete(result:"finish"))
+        print(complete("finish"))
     }
     
-    func hadleSomethingComplete(result:String) ->String {
+    func hadleSomethingComplete(_ result:String) ->String {
         print(result)
         return result
     }
